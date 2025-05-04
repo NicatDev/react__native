@@ -1,0 +1,16 @@
+{
+  "extends": "expo/tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@digitask/shared-lib": ["./libs/shared-lib/src/main.ts"]
+    }
+  }
+}

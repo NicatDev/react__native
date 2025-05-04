@@ -1,0 +1,9 @@
+.expo
+expo-env.d.ts
+*-env.d.ts
+
+%ProgramData%
+
+ios
+build
+metro-build

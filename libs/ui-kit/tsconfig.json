@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "moduleResolution": "Bundler",
+    "jsxImportSource": "nativewind",
+    "noEmit": true,
+    "downlevelIteration": true,
+
+    /* Basic Options */
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@internal/icons": ["./src/generated/utils/icon.ts"],
+      "@internal/icons/native": ["src/generated/utils/icon.native.ts"],
+      "@internal/icons/types": ["src/generated/types/icons.ts"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/src/**/*.{test,spec,stories}.{js,jsx,ts,tsx}"]
+}

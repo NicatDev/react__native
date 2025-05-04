@@ -1,0 +1,28 @@
+{
+  "name": "@oneiro/digitask",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "dependencies": {
+    "react": "~18.3.1",
+    "react-dom": "~18.3.1",
+    "react-native": "0.76.3"
+  },
+  "devDependencies": {
+    "@expo/cli": "~0.21.8",
+    "@mdreal/ui-kit": "^0.0.0-dev.71",
+    "@nx/expo": "20.5.0",
+    "@nx/vite": "20.5.0",
+    "@prettier/plugin-xml": "^3.4.1",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "expo": "^52.0.26",
+    "nativewind": "^4.1.23",
+    "nx": "20.5.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-packagejson": "^2.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.8"
+  },
+  "packageManager": "yarn@4.6.0"
+}

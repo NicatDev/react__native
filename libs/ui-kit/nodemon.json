@@ -1,0 +1,6 @@
+{
+  "ext": "ts,tsx,js,jsx,json,svg",
+  "watch": ["vite", "src"],
+  "ignore": ["src/generated/**"],
+  "exec": "yarn build"
+}

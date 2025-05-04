@@ -1,0 +1,17 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path
+    d="M13.9959 25.6666C20.4392 25.6666 25.6626 20.4432 25.6626 13.9999C25.6626 7.55659 20.4392 2.33325 13.9959 2.33325C7.55257 2.33325 2.32922 7.55659 2.32922 13.9999C2.32922 17.1068 3.54365 19.93 5.5237 22.0208L3.17717 24.6988C2.84677 25.0759 3.11455 25.6666 3.61592 25.6666H13.9959Z"
+    stroke="{{stroke|default(currentColor)}}"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+<path d="M8.16248 10.5H19.8291" stroke="{{stroke}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path
+    d="M8.16248 15.1667H12.8291"
+    stroke="{{stroke}}"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

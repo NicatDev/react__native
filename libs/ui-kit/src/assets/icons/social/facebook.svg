@@ -1,0 +1,33 @@
+<svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="Cib Facebook" clip-path="url(#clip0_377_1057)">
+    <g id="Clip path group">
+      <mask
+        id="mask0_377_1057"
+        style="mask-type:luminance"
+        maskUnits="userSpaceOnUse"
+        x="0"
+        y="0"
+        width="49"
+        height="48"
+      >
+        <g id="clip0_405_249">
+          <path id="Vector" d="M48.5 0H0.5V48H48.5V0Z" fill="white" />
+        </g>
+      </mask>
+      <g mask="url(#mask0_377_1057)">
+        <g id="Group">
+          <path
+            id="Vector_2"
+            d="M48.5 24C48.5 10.7415 37.7496 0 24.5 0C11.2415 0 0.5 10.7415 0.5 24C0.5 35.976 9.2735 45.906 20.75 47.7044V30.939H14.6555V24.0014H20.75V18.711C20.75 12.6975 24.3276 9.3765 29.8116 9.3765C32.438 9.3765 35.1876 9.8445 35.1876 9.8445V15.75H32.156C29.18 15.75 28.25 17.6025 28.25 19.5V24H34.9056L33.836 30.9376H28.25V47.703C39.7174 45.9046 48.5 35.976 48.5 24Z"
+            fill="#5E5E62"
+          />
+        </g>
+      </g>
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0_377_1057">
+      <rect width="48" height="48" fill="white" transform="translate(0.5)" />
+    </clipPath>
+  </defs>
+</svg>

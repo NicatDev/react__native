@@ -1,0 +1,26 @@
+services:
+  base:
+    image: base
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  client:
+    image: client
+    build:
+      context: apps/client
+      dockerfile: Dockerfile
+    depends_on:
+      - base
+    ports:
+      - "5000:4173"
+
+  native.dev:
+    image: native.dev
+    build:
+      context: apps/native
+      dockerfile: dev.Dockerfile
+    depends_on:
+      - base
+    ports:
+      - "5001:8081"

@@ -1,0 +1,32 @@
+{
+  "cli": {
+    "version": ">= 12.6.2",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "NODE_ENV": "production",
+        "EXPO_PUBLIC_API_URL": "https://app.desgah.az"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "NODE_ENV": "production",
+        "EXPO_PUBLIC_API_URL": "https://app.desgah.az"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

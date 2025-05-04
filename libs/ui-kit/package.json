@@ -1,0 +1,119 @@
+{
+  "name": "@mdreal/ui-kit",
+  "version": "0.0.0-dev.70",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oneirogroup/ui-kit.git"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./build/ui-kit.js",
+      "require": "./build/ui-kit.js",
+      "types": "./build/ui-kit.d.ts"
+    },
+    "./server": {
+      "import": "./build/ui-kit.server.js",
+      "require": "./build/ui-kit.server.js",
+      "types": "./build/ui-kit.server.d.ts"
+    },
+    "./client": {
+      "import": "./build/ui-kit.client.js",
+      "require": "./build/ui-kit.client.js",
+      "types": "./build/ui-kit.client.d.ts"
+    },
+    "./native": {
+      "import": "./build/ui-kit.native.js",
+      "require": "./build/ui-kit.native.js",
+      "types": "./build/ui-kit.native.d.ts"
+    },
+    "./utils": {
+      "import": "./build/ui-kit.utils.js",
+      "require": "./build/ui-kit.utils.js",
+      "types": "./build/ui-kit.utils.d.ts"
+    },
+    "./style.css": {
+      "import": "./build/style.css",
+      "require": "./build/style.css"
+    }
+  },
+  "main": "build/ui-kit.js",
+  "module": "build/ui-kit.js",
+  "types": "build/ui-kit.d.ts",
+  "files": [
+    "build",
+    "style.css",
+    "native.*",
+    "utils.*"
+  ],
+  "workspaces": [
+    "./bundler"
+  ],
+  "scripts": {
+    "build": "vite build --config vite.config.ts",
+    "dev:plugin": "nodemon --",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",
+    "format:svg": "prettier --plugin @prettier/plugin-xml --write \"**/*.svg\"",
+    "prepublishOnly": "yarn build",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.1",
+    "axios": "^1.7.7",
+    "clsx": "^2.1.1",
+    "expo-linear-gradient": "^14.0.1",
+    "framer-motion": "^11.11.17",
+    "lodash.isempty": "^4.4.0",
+    "lodash.merge": "^4.6.2",
+    "react-hook-form": "^7.53.2",
+    "tailwind-merge": "^2.5.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "^3.4.1",
+    "@react-native-picker/picker": "^2.9.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/lodash.isempty": "^4",
+    "@types/lodash.merge": "^4.6.9",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/react-native": "^0.73.0",
+    "@vitejs/plugin-react-swc": "^3.7.1",
+    "@vitest/ui": "^2.1.5",
+    "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
+    "jsdom": "^25.0.1",
+    "nativewind": "^4.1.23",
+    "postcss-nesting": "^13.0.1",
+    "prettier": "^3.3.3",
+    "prettier-plugin-packagejson": "^2.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-native": "^0.76.2",
+    "react-native-reanimated": "^3.16.1",
+    "react-native-svg": "^15.9.0",
+    "storybook": "^8.4.4",
+    "tailwindcss": "^3.4.15",
+    "type-fest": "^4.27.0",
+    "typescript": "5.4.2",
+    "vite": "^5.4.11",
+    "vite-plugin-dts": "^4.3.0",
+    "vite-tsconfig-paths": "^5.1.2",
+    "vitest": "^2.1.5"
+  },
+  "peerDependencies": {
+    "@react-native-picker/picker": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-native": "*",
+    "react-native-reanimated": "*",
+    "react-native-svg": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

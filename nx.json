@@ -1,0 +1,44 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/build"],
+      "cache": true
+    },
+    "expo:start": {
+      "dependsOn": ["^build", "^vite:build"]
+    },
+    "build:eas": {
+      "dependsOn": ["^build", "^vite:build"]
+    },
+    "android:build:local": {
+      "dependsOn": ["^build", "^vite:build"]
+    },
+    "android:install": {
+      "dependsOn": ["android:build:local"]
+    },
+    "ios:build:local": {
+      "dependsOn": ["^build", "^vite:build"]
+    }
+  },
+  "defaultBase": "develop",
+  "plugins": [
+    {
+      "plugin": "@nx/expo/plugin",
+      "options": {
+        "startTargetName": "expo:start",
+        "buildTargetName": "build",
+        "prebuildTargetName": "prebuild",
+        "serveTargetName": "serve",
+        "installTargetName": "install",
+        "exportTargetName": "export",
+        "submitTargetName": "submit",
+        "runIosTargetName": "run-ios",
+        "runAndroidTargetName": "run-android",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    }
+  ]
+}
